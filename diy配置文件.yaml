@@ -9,15 +9,15 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "订阅"
-  Airport_02:
-    type: http
-    interval: 1800
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 🟢 直连
-    url: "订阅2"
+ # Airport_02:
+  #  type: http
+   # interval: 1800
+   # health-check:
+    # enable: true
+    # url: https://www.gstatic.com/generate_204
+    # interval: 300
+   # proxy: 🟢 直连
+   # url: "订阅2"
  # override:
   #  skip-cert-verify: true
   #  udp: true
