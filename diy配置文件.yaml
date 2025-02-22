@@ -8,21 +8,21 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "订阅"
- # Airport_02:
-  #  type: http
-   # interval: 1800
-   # health-check:
-    # enable: true
-    # url: https://www.gstatic.com/generate_204
-    # interval: 300
-   # proxy: 🟢 直连
-   # url: "订阅2"
- # override:
-  #  skip-cert-verify: true
-  #  udp: true
-  #  down: "0 Mbps"
-  #  up: "0 Mbps"
+    url: "https://"
+  Airport_02:
+    type: http
+    interval: 1800
+    health-check:
+      enable: true     
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 🟢 直连
+    url: "https://"
+  #override:
+    #skip-cert-verify: true
+    #udp: true
+    #down: "0 Mbps"
+    #up: "0 Mbps"
       
 # 用于下载订阅时指定UA
 global-ua: clash.meta
@@ -58,8 +58,8 @@ external-ui-url: "https://ghp.ci/https://github.com/MetaCubeX/metacubexd/archive
 # 匹配进程 always/strict/off
 find-process-mode: strict
 global-client-fingerprint: chrome
-keep-alive-idle: 600
-keep-alive-interval: 30
+# keep-alive-idle: 3600
+# keep-alive-interval: 30
 
 # 策略组选择和fakeip缓存
 profile:
@@ -128,10 +128,10 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
     "rule-set:geolocation-!cn":
-      - "https://dns.google/dns-query"
       - "https://doh.opendns.com/dns-query"
+      - "https://dns.google/dns-query"
       - "https://1.0.0.1/dns-query"
- 
+      - "https://1.1.1.1/dns-query"
    
 proxies:
 - name: "🟢 直连"
@@ -200,6 +200,7 @@ rule-providers:
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
   netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  netflix_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs"}
   PayPal_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
   onedrive_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
   microsoft_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
@@ -209,10 +210,9 @@ rule-providers:
   geolocation-!cn: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
   cn_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
   
+  geolocation-!cn: {!!merge <<: *qcy, url: "https://raw.githubusercontent.com/285480731/Mrule/refs/heads/main/gfw.list"}
   cn_domain: {!!merge <<: *qcy, url: "https://raw.githubusercontent.com/285480731/Mrule/refs/heads/main/1/SteamCN.list"}
-  
   game_domain: {!!merge <<: *qcy, url: "https://raw.githubusercontent.com/285480731/Mrule/refs/heads/main/msfs.list"}
-  
   
   cn_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
   google_ip: {!!merge <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
