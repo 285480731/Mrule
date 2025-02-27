@@ -8,7 +8,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://su.746666.xyz/T3B9dgzBzdRbBF8A871562544gYqx7P/download/hy2-v6?target=ClashMeta"
+    url: "ClashMeta"
   Airport_02:
     type: http
     interval: 1800
@@ -17,7 +17,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://su.746666.xyz/T3B9dgzBzdRbBF8A871562544gYqx7P/download/ss%E6%9C%BA%E5%9C%BA?target=ClashMeta"
+    url: "ClashMeta"
  # override:
     skip-cert-verify: true
     udp: true
