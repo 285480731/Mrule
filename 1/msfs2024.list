@@ -147,3 +147,5 @@ IP-CIDR,20.184.175.0/24
 79.125.5.0/24
 +.ec2-79-125-5-161.eu-west-1.compute.amazonaws.com
 +.a23-216-5-214.deploy.static.akamaitechnologies.com
+104.18.1.0/24
+151.101.129.0/24
