@@ -140,3 +140,6 @@ IP-CIDR,20.184.175.0/24
 +.a23-216-5-159.deploy.static.akamaitechnologies.com
 +.a23-209-94-77.deploy.static.akamaitechnologies.com
 3.79.161.0/24
++.ec2-3-79-161-140.eu-central-1.compute.amazonaws.com
++.ec2-52-17-184-39.eu-west-1.compute.amazonaws.com
+52.17.184.0/24
