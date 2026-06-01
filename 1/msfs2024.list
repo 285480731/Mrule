@@ -274,3 +274,8 @@ IP-CIDR,20.184.175.0/24
 23.192.45.0/24
 +.a23-40-99-5.deploy.static.akamaitechnologies.com
 +.a23-40-99-2.deploy.static.akamaitechnologies.com
++.a23-193-186-4.deploy.static.akamaitechnologies.com
++.a23-200-156-216.deploy.static.akamaitechnologies.com
++.a23-220-108-10.deploy.static.akamaitechnologies.com
+23.193.186.0/24
+23.220.108.0/24
