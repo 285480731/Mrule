@@ -1,6 +1,7 @@
 # MSFS 2024 rules, generated 2026-06-04
 # Machine: Z
 
+DOMAIN-SUFFIX,akamaized.net
 DOMAIN-SUFFIX,akamaitechnologies.com
 DOMAIN-SUFFIX,static.akamaitechnologies.com
 DOMAIN-SUFFIX,ec2-3-79-161-140.eu-central-1.compute.amazonaws.com
@@ -42,6 +43,7 @@ DOMAIN-SUFFIX,olium.o2switch.net
 DOMAIN-SUFFIX,playstation.net
 DOMAIN-SUFFIX,virtualearth.net
 DOMAIN-SUFFIX,simplaza.org
+DOMAIN-SUFFIX,tile.openstreetmap.org
 DOMAIN-SUFFIX,themoviedb.org
 
 IP-CIDR,2.16.232.0/24
